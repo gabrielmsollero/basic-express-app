@@ -1,0 +1,22 @@
+###
+POST http://localhost:3000/tasks
+content-type: application/json
+
+{
+    "title": "task 1",
+    "completed": false
+}
+
+###
+GET http://localhost:3000/tasks
+
+###
+PUT http://localhost:3000/tasks/1
+content-type: application/json
+
+{
+    "completed": true
+}
+
+###
+DELETE http://localhost:3000/tasks/1
